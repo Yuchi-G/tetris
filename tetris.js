@@ -349,7 +349,6 @@ function CONTROL(event) {
   } else if (event.keyCode == 40) {
     p.moveDown();
   } else if (event.keyCode == 38) {
-    // スペースバーで「ハードドロップ」を実行
     p.hardDrop();
   }
 }
@@ -371,7 +370,7 @@ function drop() {
 drop();
 
 function randomPiece() {
-  let r = Math.floor(Math.random() * PIECES.length); // 0から6のランダムな数
+  let r = Math.floor(Math.random() * PIECES.length);
   return new Piece(PIECES[r][0], PIECES[r][1]);
 }
 
